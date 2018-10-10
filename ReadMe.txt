@@ -1,1 +1,1 @@
-Hello, thank you for using my program. To start open the .sln file and run in your IDE. To login Username = "1234" && Password = "1234". Enjoy :)
+Hello, thank you for using my program. To start open the .sln file and run in your IDE. To login Username = "1234" && Password = "1234". Enjoy :). There was a problem uploading my assigment. I was working in my own repo instead of working in the forked repo. To see all the changes and updates here is the link to my other repo https://github.com/matthewallen7/Develop-Open-Source-application 
