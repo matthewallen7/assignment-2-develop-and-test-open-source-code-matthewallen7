@@ -38,7 +38,7 @@
             this.txt_Username = new System.Windows.Forms.TextBox();
             this.TP_Dashboard = new System.Windows.Forms.TabPage();
             this.btn_Update = new System.Windows.Forms.Button();
-            this.btn_CheckOut = new System.Windows.Forms.Button();
+            this.btn_CheckedIn = new System.Windows.Forms.Button();
             this.txt_TotalServices = new System.Windows.Forms.TextBox();
             this.txt_CheckService = new System.Windows.Forms.TextBox();
             this.lbl_totalServices = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@
             this.lbl_Registration = new System.Windows.Forms.Label();
             this.lbl_Odometer = new System.Windows.Forms.Label();
             this.LB_Vehicles = new System.Windows.Forms.ListBox();
-            this.btn_CheckIn = new System.Windows.Forms.Button();
+            this.btn_CheckOut = new System.Windows.Forms.Button();
             this.TP_Rental = new System.Windows.Forms.TabPage();
             this.btn_Pay = new System.Windows.Forms.Button();
             this.lbl_Pay = new System.Windows.Forms.Label();
@@ -170,7 +170,7 @@
             // 
             this.TP_Dashboard.BackColor = System.Drawing.Color.Cyan;
             this.TP_Dashboard.Controls.Add(this.btn_Update);
-            this.TP_Dashboard.Controls.Add(this.btn_CheckOut);
+            this.TP_Dashboard.Controls.Add(this.btn_CheckedIn);
             this.TP_Dashboard.Controls.Add(this.txt_TotalServices);
             this.TP_Dashboard.Controls.Add(this.txt_CheckService);
             this.TP_Dashboard.Controls.Add(this.lbl_totalServices);
@@ -190,7 +190,7 @@
             this.TP_Dashboard.Controls.Add(this.lbl_Registration);
             this.TP_Dashboard.Controls.Add(this.lbl_Odometer);
             this.TP_Dashboard.Controls.Add(this.LB_Vehicles);
-            this.TP_Dashboard.Controls.Add(this.btn_CheckIn);
+            this.TP_Dashboard.Controls.Add(this.btn_CheckOut);
             this.TP_Dashboard.Location = new System.Drawing.Point(4, 25);
             this.TP_Dashboard.Name = "TP_Dashboard";
             this.TP_Dashboard.Padding = new System.Windows.Forms.Padding(3);
@@ -210,17 +210,17 @@
             this.btn_Update.UseVisualStyleBackColor = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // btn_CheckOut
+            // btn_CheckedIn
             // 
-            this.btn_CheckOut.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_CheckOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_CheckOut.Location = new System.Drawing.Point(17, 313);
-            this.btn_CheckOut.Name = "btn_CheckOut";
-            this.btn_CheckOut.Size = new System.Drawing.Size(241, 30);
-            this.btn_CheckOut.TabIndex = 21;
-            this.btn_CheckOut.Text = "Check Out";
-            this.btn_CheckOut.UseVisualStyleBackColor = false;
-            this.btn_CheckOut.Click += new System.EventHandler(this.btn_CheckOut_Click);
+            this.btn_CheckedIn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_CheckedIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_CheckedIn.Location = new System.Drawing.Point(17, 313);
+            this.btn_CheckedIn.Name = "btn_CheckedIn";
+            this.btn_CheckedIn.Size = new System.Drawing.Size(241, 30);
+            this.btn_CheckedIn.TabIndex = 21;
+            this.btn_CheckedIn.Text = "Check In";
+            this.btn_CheckedIn.UseVisualStyleBackColor = false;
+            this.btn_CheckedIn.Click += new System.EventHandler(this.btn_CheckIn_Click);
             // 
             // txt_TotalServices
             // 
@@ -378,17 +378,17 @@
             this.LB_Vehicles.TabIndex = 2;
             this.LB_Vehicles.SelectedIndexChanged += new System.EventHandler(this.LB_Vehicles_SelectedIndexChanged);
             // 
-            // btn_CheckIn
+            // btn_CheckOut
             // 
-            this.btn_CheckIn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_CheckIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_CheckIn.Location = new System.Drawing.Point(17, 351);
-            this.btn_CheckIn.Name = "btn_CheckIn";
-            this.btn_CheckIn.Size = new System.Drawing.Size(241, 30);
-            this.btn_CheckIn.TabIndex = 1;
-            this.btn_CheckIn.Text = "Check In";
-            this.btn_CheckIn.UseVisualStyleBackColor = false;
-            this.btn_CheckIn.Click += new System.EventHandler(this.btn_CheckIn_Click);
+            this.btn_CheckOut.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_CheckOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_CheckOut.Location = new System.Drawing.Point(17, 351);
+            this.btn_CheckOut.Name = "btn_CheckOut";
+            this.btn_CheckOut.Size = new System.Drawing.Size(241, 30);
+            this.btn_CheckOut.TabIndex = 1;
+            this.btn_CheckOut.Text = "Check Out";
+            this.btn_CheckOut.UseVisualStyleBackColor = false;
+            this.btn_CheckOut.Click += new System.EventHandler(this.btn_CheckOut_Click);
             // 
             // TP_Rental
             // 
@@ -557,7 +557,7 @@
         private System.Windows.Forms.TabControl TabC;
         private System.Windows.Forms.TabPage TP_Login;
         private System.Windows.Forms.TabPage TP_Dashboard;
-        private System.Windows.Forms.Button btn_CheckIn;
+        private System.Windows.Forms.Button btn_CheckOut;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Label lbl_Username;
         private System.Windows.Forms.Label lbl_Login;
@@ -597,7 +597,7 @@
         private System.Windows.Forms.TextBox txt_Pay;
         private System.Windows.Forms.Label lbl_NeedService;
         private System.Windows.Forms.TextBox txt_NeedService;
-        private System.Windows.Forms.Button btn_CheckOut;
+        private System.Windows.Forms.Button btn_CheckedIn;
         private System.Windows.Forms.Button btn_Update;
     }
 }

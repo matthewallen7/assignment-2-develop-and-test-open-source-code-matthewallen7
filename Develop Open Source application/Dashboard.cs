@@ -174,12 +174,6 @@ namespace Develop_Open_Source_application
 
         private void btn_CheckIn_Click(object sender, EventArgs e)
         {
-            TabC.SelectTab(2);
-        }
-
-        //checkout vehicle button
-        private void btn_CheckOut_Click(object sender, EventArgs e)
-        {
             if (LB_Vehicles.SelectedItem != null)
             {
                 if (txt_CheckService.Text == "N")       //check to see if the vehicle needs service
@@ -195,6 +189,12 @@ namespace Develop_Open_Source_application
             {
                 MessageBox.Show("Please select a car");
             }
+        }
+
+        //checkout vehicle button
+        private void btn_CheckOut_Click(object sender, EventArgs e)
+        {
+            TabC.SelectTab(2);
         }
 
         //update the service on the selected vehicle.
@@ -215,6 +215,7 @@ namespace Develop_Open_Source_application
                 Vehicles[vehicleNo].Checkservice = txt_CheckService.Text;
                 btn_Update.BackColor = SystemColors.Control;
                 txt_CheckService.BackColor = Color.White;
+                MessageBox.Show("The Car is now serviced");
             }
         }
     }
