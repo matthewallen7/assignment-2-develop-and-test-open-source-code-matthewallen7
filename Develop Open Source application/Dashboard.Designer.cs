@@ -218,7 +218,7 @@
             this.btn_CheckedIn.Name = "btn_CheckedIn";
             this.btn_CheckedIn.Size = new System.Drawing.Size(241, 30);
             this.btn_CheckedIn.TabIndex = 21;
-            this.btn_CheckedIn.Text = "Check In";
+            this.btn_CheckedIn.Text = "Select Car";
             this.btn_CheckedIn.UseVisualStyleBackColor = false;
             this.btn_CheckedIn.Click += new System.EventHandler(this.btn_CheckIn_Click);
             // 
@@ -386,7 +386,7 @@
             this.btn_CheckOut.Name = "btn_CheckOut";
             this.btn_CheckOut.Size = new System.Drawing.Size(241, 30);
             this.btn_CheckOut.TabIndex = 1;
-            this.btn_CheckOut.Text = "Check Out";
+            this.btn_CheckOut.Text = "Pay";
             this.btn_CheckOut.UseVisualStyleBackColor = false;
             this.btn_CheckOut.Click += new System.EventHandler(this.btn_CheckOut_Click);
             // 
